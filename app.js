@@ -14,10 +14,14 @@ var todoRoutes = require('./routes/todos');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+//__dirname just stores the current directory of execution
+app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/public'));
 
-//get request to root route
+
+//get request to root route - single page app
 app.get('/', function(req, res){
-	res.send("Hello from the root route");
+	res.sendFile("index.html");
 });
 
 
