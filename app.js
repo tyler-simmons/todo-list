@@ -31,7 +31,7 @@ app.use('/api/todos', todoRoutes);
 
 
 //Listen for requests
-app.listen(port, process.env.IP, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
 	console.log("Server started on port 3000");
 });
 
