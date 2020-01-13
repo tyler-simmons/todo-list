@@ -1,25 +1,30 @@
 {
   "name": "todo-list",
   "version": "1.0.0",
-  "description": "react todo list api",
+  "description": "Very basic todo list app that allows for creating todo's, editing them, checking off items, and deleting them. At this time it does not support account creation.\r ## Technologies\r ### Backend\r * Node.js\r   * Express\r * Mongo Db\r   * Mongoose ODM\r ### Frontend\r * HTML\r * CSS\r * Javascript\r ## Development Plan\r * Migrate to SQL\r * Add user creation feature\r ## Screenshots",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyler-simmons/todo-list.git"
   },
-  "author": "Tyler",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tyler-simmons/todo-list/issues"
   },
   "homepage": "https://github.com/tyler-simmons/todo-list#readme",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "mongoose": "^5.6.7"
+    "express-session": "^1.17.0",
+    "mysql": "^2.17.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^7.17.1"
   }
 }
